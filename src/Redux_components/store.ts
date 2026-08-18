@@ -23,9 +23,9 @@ function reducer (currentState: Store = initailState, action: AnyAction): Store 
     switch (action.type) {
 
         case HAPPY_CLICKED: 
-            return {...currentState, happycount: [...currentState.happycount, {intensity: action.payload}]};
+            return {...currentState, happycount: [...currentState.happycount, {intensity: action.playload}]};
         case  SAD_CLICKED:
-            return {...currentState, sadcount: [...currentState.sadcount, {intensity: action.payload}]};
+            return {...currentState, happycount: [...currentState.sadcount, {intensity: action.playload}]};
 
         default: 
             return currentState
